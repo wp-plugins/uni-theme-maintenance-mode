@@ -85,11 +85,9 @@
 
 	                $mc_api = get_option('unitheme_maintenance_mode_mailchimp_api');
 	                $api = new MCAPI('' . $mc_api . '');
-                    //$api = new MCAPI('43e52b0b46983e2c9cf9f5ab7d19c6ae-us2');
 
                     $mc_list = get_option('unitheme_maintenance_mode_mailchimp_list');
 	                $list_id = "$mc_list";
-                    //$list_id = "9b0b407d05";
 
 					if($api->listSubscribe($list_id, $_GET['email_input'], '') === true) {
 						return __("Успішно! Перевірте вашу скриньку, щоб підтвердити підписку.", "unitheme-m-m");
