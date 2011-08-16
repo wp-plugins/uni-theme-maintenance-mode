@@ -1,4 +1,4 @@
-=== Uni-theme Maintenance Mode ===
+﻿=== Uni-theme Maintenance Mode ===
 Contributors: mr.psiho
 Donate link: http://uni-theme.net/
 Tags: maintenance, coming soon, admin, administration, construction, unavailable
@@ -18,21 +18,21 @@ Currently only in Ukrainian translation!
 
 Features:
 
-    Used custom fonts with cyrillyc characters
-    Social service integration
-    MailChimp e-mail subscription form
-    2 themes available
-    Custom logo
-    Available .po file for making translations
+- Used custom fonts with cyrillyc characters
+- Social service integration
+- MailChimp e-mail subscription form
+- 2 themes available
+- Custom logo
+- Available .po file for making translations
 
 Можливості:
 
-    Застосовано кастомні шрифти, що підтримують кирилицю
-    Інтеграція із соціальними сервісами - іконки: Facebook, Twitter, Vkontakte, Orkut, LinkedIn, Blogger, Flickr + іконка RSS
-    Форма підписки інтегрована з MailChimp
-    Доступні 2 кольорові схеми: бежева та зелена
-    Можливість відображати власне лого
-    Доступний файл .po, що дозволяє робити переклад іншими мовами
+- Застосовано кастомні шрифти, що підтримують кирилицю
+- Інтеграція із соціальними сервісами - іконки: Facebook, Twitter, Vkontakte, Orkut, LinkedIn, Blogger, Flickr + іконка RSS
+- Форма підписки інтегрована з MailChimp
+- Доступні 2 кольорові схеми: бежева та зелена
+- Можливість відображати власне лого
+- Доступний файл .po, що дозволяє робити переклад іншими мовами
 
 
 == Installation ==
