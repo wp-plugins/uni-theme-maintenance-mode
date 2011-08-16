@@ -12,17 +12,27 @@ Currently only in Ukrainian translation!
 
 (Eng) Adds a "Maintenance Mode" page to your site (sending a "503 Service Unavailable" status). Includes MailChimp mail subscriptions.
 
-(Ukr) ����� ���� �������-�������� ���� "�� �������������" (����������� ������ "503 ����� �����������"). ������ ����� ������� �� ��. ����� � ��������� MailChimp.
+(Ukr) Плагін додає сторінку-заглушку типу "На реконструкції" (надсилається статус "503 Сервіс недоступний"). Включає форму підписки на ел. пошту з допомогою MailChimp.
 
 <a target="_blank" href="http://demo.uni-theme.net/">Live demo!</a>
 
 Features:
 
-- Used custom fonts with cyrillyc characters
-- Social service integration
-- MailChimp e-mail subscription form
-- 2 themes available
-- Custom logo
+    Used custom fonts with cyrillyc characters
+    Social service integration
+    MailChimp e-mail subscription form
+    2 themes available
+    Custom logo
+    Available .po file for making translations
+
+Можливості:
+
+    Застосовано кастомні шрифти, що підтримують кирилицю
+    Інтеграція із соціальними сервісами - іконки: Facebook, Twitter, Vkontakte, Orkut, LinkedIn, Blogger, Flickr + іконка RSS
+    Форма підписки інтегрована з MailChimp
+    Доступні 2 кольорові схеми: бежева та зелена
+    Можливість відображати власне лого
+    Доступний файл .po, що дозволяє робити переклад іншими мовами
 
 
 == Installation ==
