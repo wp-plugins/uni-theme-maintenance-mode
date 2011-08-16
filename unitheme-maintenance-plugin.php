@@ -5,7 +5,7 @@ Plugin URI: http://uni-theme.net/
 Description: (Eng) Adds a "Maintenance Mode" page to your site (sending a "503 Service Unavailable" status). Includes MailChimp mail subscriptions. / (Ukr) Плагін додає сторінку-заглушку типу "На реконструкції" (надсилається статус "503 Сервіс недоступний"). Включає форму підписки на ел. пошту з допомогою MailChimp.
 Author: Vitaliy Kiyko
 Author URI: http://uni-theme.net/
-Version: 1.0
+Version: 1.0.2
 Tags: maintenance, maintenance mode
 License: GPL2
 */
@@ -163,8 +163,8 @@ class uni_maintenance {
     function admin_init()
 	{
 		add_options_page( 'Uni-theme Maintenance Mode Plugin Options', 'Uni-theme Maintenance Plugin', 'manage_options', $this->_options_slug, array( &$this, 'build_options_page' ) );
-        wp_enqueue_style( "functions", UNI_MAINTENANCE_WP_PLUGIN_DIR."/functions.css", false, "1.0", "all" );
-        wp_enqueue_script( "script-js", UNI_MAINTENANCE_WP_PLUGIN_DIR."/js/script-js.js", false, "1.0" );
+        wp_enqueue_style( "unitheme-m-mfunctions", UNI_MAINTENANCE_WP_PLUGIN_DIR."/unitheme-m-m-functions.css", false, "1.0", "all" );
+        wp_enqueue_script( "unitheme-m-m-js", UNI_MAINTENANCE_WP_PLUGIN_DIR."/js/unitheme-m-m-js.js", false, "1.0" );
 	}
 
     function build_options_page()
@@ -180,17 +180,17 @@ class uni_maintenance {
         if ( isset($_POST['save_settings']) ) $this->_unitheme_maintenance_save($_POST);
 
 ?>
-<div class="wrap unitheme_wrap">
+<div class="wrap unimm_wrap">
 <h2><?php _e("Uni-theme Maintenance Mode: Налаштування плагіна", "unitheme-m-m"); ?></h2>
 
-<div class="unitheme_opts">
+<div class="unimm_opts">
 <form method="post">
 
 <?php foreach ($this->_options_value as $value) {
 switch ( $value['type'] ) {
 case "title":
 ?>
-<div class="theme-logo"></div>
+<div class="unimm-logo"></div>
 
 <?php
 break;
@@ -221,7 +221,7 @@ case 'text':
 
 ?>
 
-<div class="unitheme_input unitheme_text">
+<div class="unimm_input unimm_text">
 	<label for="<?php echo $value['id']; ?>"><?php echo $value['name']; ?></label>
  	<input name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>" type="<?php echo $value['type']; ?>" value="<?php echo stripslashes(htmlspecialchars(get_option( $value['id'], $value['std'] ),ENT_QUOTES)); ?>" />
  <small><?php echo $value['desc']; ?></small><div class="clearfix"></div>
@@ -233,7 +233,7 @@ break;
 case 'textarea':
 ?>
 
-<div class="unitheme_input unitheme_textarea">
+<div class="unimm_input unimm_textarea">
 	<label for="<?php echo $value['id']; ?>"><?php echo $value['name']; ?></label>
  	<textarea name="<?php echo $value['id']; ?>" type="<?php echo $value['type']; ?>" cols="" rows=""><?php echo stripslashes(htmlspecialchars(get_option( $value['id'], $value['std'] ),ENT_QUOTES)); ?></textarea>
  <small><?php echo $value['desc']; ?></small><div class="clearfix"></div>
@@ -246,7 +246,7 @@ break;
 case 'select':
 ?>
 
-<div class="unitheme_input unitheme_select">
+<div class="unimm_input unimm_select">
 	<label for="<?php echo $value['id']; ?>"><?php echo $value['name']; ?></label>
 
 <select name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>">
@@ -262,7 +262,7 @@ break;
 case "checkbox":
 ?>
 
-<div class="unitheme_input unitheme_checkbox">
+<div class="unimm_input unimm_checkbox">
 	<label for="<?php echo $value['id']; ?>"><?php echo $value['name']; ?></label>
 
 <?php if(get_option($value['id'])){ $checked = "checked=\"checked\""; }else{ $checked = "";} ?>
@@ -278,7 +278,7 @@ case "checkbox":
 ?>
 
 <div style="clear:both;"></div>
-<input class="plugin-button" name="save_settings" type="submit" value="<?php _e("Зберегти зміни", "unitheme-m-m"); ?>" />
+<input class="unimm-plugin-button" name="save_settings" type="submit" value="<?php _e("Зберегти зміни", "unitheme-m-m"); ?>" />
 </form>
 </div>
 </div>
