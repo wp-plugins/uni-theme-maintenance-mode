@@ -52,7 +52,7 @@ Features:
 == Changelog ==
 
 = 1.0.2 =
-* Some minor bug fixes
+* Some minor bug fixes and improvements
 
 = 1.0 =
 * First release
