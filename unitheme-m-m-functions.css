@@ -1,9 +1,9 @@
-.unitheme_wrap {
+.unimm_wrap {
     position:relative;
 	width:740px;
     float:left;
 }
-.theme-logo {
+.unimm-logo {
     position:relative;
     width: 738px;
     height: 57px;
@@ -15,12 +15,12 @@
 	-moz-box-shadow: #aaa 0px -2px 5px;
 	box-shadow: #aaa 0px -2px 5px;
 }
-.unitheme_section{
+.unimm_section{
 	border:1px solid #ddd;
 	border-bottom:0;
 	background:#fff;
 }
-.unitheme_opts h3 {
+.unimm_opts h3 {
     margin:0;
     padding:10px 5px;
     color:#8B4513;
@@ -28,7 +28,7 @@
     border-left:1px solid #ddd;
 	border-right:1px solid #fff;
 }
-.unitheme_opts label{
+.unimm_opts label{
     margin-right: 20px;
 	font-size:12px;
 	font-weight:700;
@@ -37,18 +37,18 @@
 	float:left;
     color: #696969;
 }
-.unitheme_input {
+.unimm_input {
 	padding:15px 10px;
 	border-bottom:1px solid #ddd;
 	border-top:1px solid #fff;
 }
-.unitheme_opts small{
+.unimm_opts small{
     margin-top: 20px;
 	display:block;
 	color:#999;
     font-size:11px;
 }
-.unitheme_opts input[type="text"], .unitheme_opts select{
+.unimm_opts input[type="text"], .unimm_opts select{
 	width:450px;
 	font-size:12px;
 	padding:4px;
@@ -56,10 +56,10 @@
 	line-height:1em;
 	background:#f3f3f3;
 }
-.unitheme_input input:focus, .unitheme_input textarea:focus{
+.unimm_input input:focus, .unimm_input textarea:focus{
     background:#fff;
 }
-.unitheme_input textarea{
+.unimm_input textarea{
 	width:450px;
 	height:125px;
 	font-size:12px;
@@ -68,7 +68,7 @@
 	line-height:1.5em;
 	background:#f3f3f3;
 }
-.plugin-button {
+.unimm-plugin-button {
     margin:10px 0;
     outline:none;
     cursor:pointer;
@@ -78,7 +78,7 @@
 	-moz-box-shadow: #9ACD32 0px 0px 7px;
 	box-shadow: #9ACD32 0px 0px 7px;
 }
-.plugin-button {
+.unimm-plugin-button {
     text-shadow: #fff 1px 1px 1px;
 }
 

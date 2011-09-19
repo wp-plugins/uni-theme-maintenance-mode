@@ -11,9 +11,9 @@ License: GPL2
 */
 
 if ( ! defined( 'UNI_MAINTENANCE_WP_PLUGIN_DIR' ) )
-    define( 'UNI_MAINTENANCE_WP_PLUGIN_DIR', WP_CONTENT_URL. '/plugins/unitheme-maintenance-mode' );
+    define( 'UNI_MAINTENANCE_WP_PLUGIN_DIR', WP_CONTENT_URL. '/plugins/uni-theme-maintenance-mode' );
 if( !load_plugin_textdomain('unitheme-m-m','/wp-content/languages/') )
-    load_plugin_textdomain('unitheme-m-m','/wp-content/plugins/unitheme-maintenance-mode/languages/');
+    load_plugin_textdomain('unitheme-m-m','/wp-content/plugins/uni-theme-maintenance-mode/languages/');
 
 class uni_maintenance {
 
